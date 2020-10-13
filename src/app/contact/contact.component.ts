@@ -49,7 +49,7 @@ export class ContactComponent implements OnInit {
       borrowAmount: this.fg.controls['borrowAmount'].value,
       message: this.fg.controls['message'].value,
     };
-    this.http.post('http://192.168.1.237:9086/customer', payload).subscribe(response => {
+    this.http.post('http://localhost:9086/customer', payload).subscribe(response => {
       this.successfullSubmission = true;
     });
   } 

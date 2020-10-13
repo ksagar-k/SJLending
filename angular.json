@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "SJLending"
+    }
+  },
+  "defaultProject": "SJLending",
+  "cli": {
+    "analytics": false
+  }
 }
