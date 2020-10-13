@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'css/bootstrap.min.css';
+@import 'css/font-awesome.min.css';
+@import 'css/elegant-icons.css';
+@import 'css/nice-select.css';
+@import 'css/magnific-popup.css';
+@import 'css/jquery-ui.min.css';
+@import 'css/owl.carousel.min.css';
+@import 'css/slicknav.min.css';
+@import 'css/style.css';

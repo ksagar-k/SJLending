@@ -1,0 +1,57 @@
+<!-- Breadcrumb Section Begin -->
+<div class="breadcrumb-option contact-breadcrumb set-bg" data-setbg="img/breadcrumb/contact-breadcrumb.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Contact Us</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb Section End -->
+
+<!-- Contact Begin -->
+<section class="contact spad" *ngIf="!successfullSubmission">
+    <div class="container">
+        <div class="contact__form">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact__form__text">
+                        <div class="contact__form__title">
+                            <h2>Apply Today!</h2>
+                            <p>&nbsp;</p>
+                        </div>
+                        <form [formGroup]="fg" (submit)="apply()">
+                            <div class="input-list">
+                                <input type="text" formControlName="firstName" placeholder="First name">
+                                <input type="text" formControlName="lastName" placeholder="Last name">
+                                <input type="text" formControlName="email" placeholder="Your email">
+                                <input type="text" formControlName="street" placeholder="Street Address">
+                                <input type="text" formControlName="city" placeholder="City">
+                                State: Virginia <i>(loans available in Virginia only at this time)</i>
+                                <input type="text" formControlName="zipCode" size="5" maxlength="10" placeholder="Zip Code">
+                                <input type="phone" formControlName="phone" size="10" maxlength="10" placeholder="Your phone number">
+                                <input type="password" formControlName="ssn" data-inputmask="'mask': '999/-99/-9999;0;_'" size="10"
+                                    maxlength="9" placeholder="Your Social Security Number">
+                                <input type="text" formControlName="borrowAmount" size="10" maxlength="10"
+                                    placeholder="How much are you wanting to borrow?">
+                            </div>
+                            <textarea formControlName="message" placeholder="Your Message"></textarea>
+                            <button class="site-btn" type="submit">Send Message</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact End -->
+<section class="contact spad" *ngIf="successfullSubmission">
+    <div class="contact__form__title">
+        <h2>Data Submitted for Processing!</h2>
+        <p>&nbsp;</p>
+    </div>
+</section>

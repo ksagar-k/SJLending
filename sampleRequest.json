@@ -1,0 +1,17 @@
+{
+    "firstName": "Kiran",
+    "lastName": "Kumar",
+    "email": "ksagar_k@yahoo.com",
+    "ssn": {
+        "value": "420424242"
+    },
+    "address": {
+        "street": "Piscataway Drive",
+        "city": "Edison",
+        "zipCode": "94041",
+        "state": "NJ"
+    },
+    "phoneNumber": "5015049067",
+    "borrowAmount": 1000000.0,
+    "message": "Please Sir, give me some dalara"
+}
